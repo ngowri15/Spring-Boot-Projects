@@ -1,6 +1,6 @@
-# dboperations
+# SPRING BOOT CRUD API FOR PROCESSING BOOK DETAILS
 
-This is a SpringBoot application built to achieve the CRUD operations using MySQL DB. 
+This is a Spring Boot CRUD API for processing book details with MySQL DB. 
 
 
 
@@ -21,7 +21,6 @@ This is a SpringBoot application built to achieve the CRUD operations using MySQ
 - `model` — to hold our bean class
 - `repository` — to write implementations of service interfaces
 - `application.properties` - Spring reads the properties defined in this file to configure the application
-- `test/*Test.java` - contains unit and integration tests
 - `pom.xml` - contains all the project dependencies
 
 
@@ -72,7 +71,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 ```
 ## How to Run this
 
-- Checkout the dboperations code from GIT
+- Checkout the SPRING BOOT CRUD API FOR PROCESSING BOOK DETAILS code from GIT
 - Import into Spring Tool Suite as Maven project
 - Run as Maven project with below goals
 
