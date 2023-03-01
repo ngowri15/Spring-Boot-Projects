@@ -1,6 +1,6 @@
-# dboperations
+# SPRING BOOT BATCH API FOR ADDING BOOK DETAILS
 
-This is a SpringBoot application built to achieve the CRUD operations using MySQL DB. 
+This is a Spring Boot Batch API for adding book details to MySQL DB. 
 
 
 
@@ -21,7 +21,6 @@ This is a SpringBoot application built to achieve the CRUD operations using MySQ
 - `model` — to hold our bean class
 - `repository` — to write implementations of service interfaces
 - `application.properties` - Spring reads the properties defined in this file to configure the application
-- `test/*Test.java` - contains unit and integration tests
 - `pom.xml` - contains all the project dependencies
 
 
@@ -30,19 +29,28 @@ This is a SpringBoot application built to achieve the CRUD operations using MySQ
 Spring Boot starter pack is used for bootstrapping the main class
 
 ```xml
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter</artifactId>
-</dependency>
-<dependency>
-	<groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter-jdbc</artifactId>
-</dependency>
-<dependency>
-	<groupId>com.mysql</groupId>
-	<artifactId>mysql-connector-j</artifactId>
-	<scope>runtime</scope>
-</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-batch</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 ```
 
 
@@ -72,7 +80,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 ```
 ## How to Run this
 
-- Checkout the dboperations code from GIT
+- Checkout the SPRING BOOT BATCH API FOR ADDING BOOK DETAILS code from GIT
 - Import into Spring Tool Suite as Maven project
 - Run as Maven project with below goals
 
