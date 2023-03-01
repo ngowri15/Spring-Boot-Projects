@@ -46,11 +46,6 @@ Spring Boot starter pack is used for bootstrapping the main class
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
 ```
 
 
@@ -69,13 +64,15 @@ CREATE TABLE `test`.`BOOK_DETAILS` (
 
 - MySql Configuration
 
-```properties
+```
 server.port = 8989
 server.servlet.context-path=/training/dboperation
 spring.datasource.url=jdbc:mysql://localhost:3306/test
 spring.datasource.username=root
 spring.datasource.password=*******
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.batch.jdbc.initialize-schema=ALWAYS
+spring.batch.job.enabled=false
 
 ```
 ## How to Run this
@@ -90,18 +87,13 @@ mvn clean install spring-boot:run [For Command prompt]
 ```
 
 
-### Endpoints
+### Endpoint
 
-Below are the endpoints to test your API
+Below is the endpoint to test the API
 
 |  URL |  Method | Header| Purpose|
 |----------|--------------|--------------|--------------|
-|`http://localhost:8989/training/dboperation/api/bookDetails`                           | GET | `Content-Type: text/plain`| Get the Book Details|
-|`http://localhost:8989/training/dboperation/api/bookDetails`                           | POST | `Content-Type: text/plain`| Insert the Book Details|
-|`http://localhost:8989/training/dboperation/api/bookDetails/{isbn_id}`                 | PUT | `Content-Type: text/plain`| Update the Book Details|
-|`http://localhost:8989/training/dboperation/api/bookDetails/{isbn_id}`                 | DELETE | `Content-Type: text/plain`| Delete the Book Details|
-|`http://localhost:8989/training/dboperation/api/bookDetails`                           | DELETE | `Content-Type: text/plain`| Delete all the Book Details|
-
+|`http://localhost:8989/training/dboperation/api/uploadBookDetails`              | POST | `Content-Type: text/plain`| Insert all the book details|
 
 ## How to Test
 
