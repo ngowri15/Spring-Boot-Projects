@@ -7,10 +7,10 @@ This is a Spring Boot CRUD API for processing book details with MySQL DB.
 ## Softwares Need
 
 * 	[JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Java™ Platform, Standard Edition Development Kit 
-* 	[Spring Boot](https://spring.io/projects/spring-boot) - ESB to develop the microservices
+* 	[Spring Boot](https://spring.io/projects/spring-boot) - Spring framework tool to develop microservices and applications
 * 	[Spring Tool Suite IDE](https://spring.io/tools) - IDE to develop the SpringBoot App
 * 	[Maven](https://maven.apache.org/) - Build and Dependency management tool
-* 	[MySQL](https://downloads.mysql.com/archives/community) - To download MySQL community database
+* 	[MySQL](https://downloads.mysql.com/archives/community) - Relational Database Management System
 * 	[Postman](https://www.getpostman.com/) - API testing tool
 
 
@@ -60,7 +60,7 @@ CREATE TABLE `test`.`BOOK_DETAILS` (
 
 - MySql Configuration
 
-```properties
+```
 server.port = 8989
 server.servlet.context-path=/training/dboperation
 spring.datasource.url=jdbc:mysql://localhost:3306/test
